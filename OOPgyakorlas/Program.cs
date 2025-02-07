@@ -40,6 +40,18 @@
 
 			Console.WriteLine("\n"+ karakter1.ToString() + "\n" + karakter2.ToString());
 
+            Console.WriteLine("---------------------------------------");
+
+			Urhajo urhajo1 = new("Millennium Falcon", 1000, 100, 50);
+			Urhajo urhajo2 = new("X-Wing", 100);
+
+			Console.WriteLine(urhajo1.ToString() + "\n" + urhajo2.ToString());
+
+			urhajo1.Indulas();
+			urhajo1.Tankolas(20);
+			urhajo1.Landolas();
+
+			Console.WriteLine("\n" + urhajo1.ToString() + "\n" + urhajo2.ToString());
 		}
 	}
 }
