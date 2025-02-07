@@ -27,6 +27,19 @@
 
 			Console.WriteLine("\n" + film1.ToString());
 
+            Console.WriteLine("---------------------------------------");
+
+			Karakter karakter1 = new("Gandalf", 20, 100, 50);
+			Karakter karakter2 = new("Frodo", 30);
+
+			Console.WriteLine(karakter1.ToString() + "\n" + karakter2.ToString());
+
+			karakter1.Tamadas(karakter2);
+			karakter2.Gogyulas(20);
+			karakter1.SzintLepes();
+
+			Console.WriteLine("\n"+ karakter1.ToString() + "\n" + karakter2.ToString());
+
 		}
 	}
 }
