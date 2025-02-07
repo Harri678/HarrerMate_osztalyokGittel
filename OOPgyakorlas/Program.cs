@@ -52,6 +52,20 @@
 			urhajo1.Landolas();
 
 			Console.WriteLine("\n" + urhajo1.ToString() + "\n" + urhajo2.ToString());
-		}
+
+            Console.WriteLine("------------------------------------------");
+
+			KemKuldetes kuldetes1 = new("Kém", "Magyarország", 10, 70);
+			KemKuldetes kuldetes2 = new("Kém", "Magyarország");
+
+			Console.WriteLine(kuldetes1.ToString() + "\n" + kuldetes2.ToString());
+
+			kuldetes1.KuldetesInditasa();
+			kuldetes1.VeszelySzintNovel(20);
+			kuldetes1.SikerEselyNovelese(20);
+
+			Console.WriteLine("\n" + kuldetes1.ToString() + "\n" + kuldetes2.ToString());
+			
+        }
 	}
 }
