@@ -14,6 +14,19 @@
 
 			Console.WriteLine("\n" + konyv1.ToString() + "\n" + konyv1.HanyOldalMaradt(20));
 
+            Console.WriteLine("---------------------------------------");
+
+			Film film1 = new("Titanic", "James Cameron", 195, "Romantikus", true);
+			Film film2 = new("Nem tudom meg", "Én");
+
+			Console.WriteLine(film1.ToString() + "\n" + film2.ToString());
+
+			film1.Jatszas();
+			film1.HosszNoveles(21);
+			film1.MufajModositas("Romantikus, dráma");
+
+			Console.WriteLine("\n" + film1.ToString());
+
 		}
 	}
 }
